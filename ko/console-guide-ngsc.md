@@ -11,7 +11,7 @@
 | VPC | 스토리지에 접근할 VPC(virtual private cloud, 가상 사설 클라우드)입니다. |
 | 서브넷 | 스토리지에 접근할 서브넷입니다. 선택된 VPC의 서브넷만 선택할 수 있습니다. |
 | 크기 | 생성할 스토리지의 크기입니다. 최소 1테라바이트(TB)부터 최대 2페타바이트(PB)까지 입력할 수 있습니다. |
-| 접근 제어 목록(ACL) | Network ACL 서비스를 통해 접근 제어 목록(ACL)을 설정할 수 있습니다. 자세한 사항은 [Network ACL 서비스 사용자 가이드](https://docs.nhncloud.com/ko/Network/Network%20ACL/ko/overview)를 참고하세요. |
+| 접근 제어 목록(ACL) | Network ACL 서비스를 통해 접근 제어 목록(ACL)을 설정할 수 있습니다. 자세한 사항은 [Network ACL 서비스 사용자 가이드](https://docs.ngsc.go.kr/ko/Network/Network%20ACL/ko/overview)를 참고하세요. |
 | 스냅숏 자동 생성 | 매일 지정한 시간에 스냅숏을 자동으로 생성합니다. 설정한 개수를 초과하면 가장 오래된 스냅숏부터 순차적으로 삭제됩니다. |
 
 ### NAS 스토리지 삭제
@@ -29,7 +29,7 @@
 
 ### 접근 제어 설정 변경
 
-Network ACL 서비스를 통해 접근 제어 목록(ACL)을 설정할 수 있습니다. 자세한 사항은 [Network ACL 서비스 사용자 가이드](https://docs.nhncloud.com/ko/Network/Network%20ACL/ko/overview)를 참고하세요.
+Network ACL 서비스를 통해 접근 제어 목록(ACL)을 설정할 수 있습니다. 자세한 사항은 [Network ACL 서비스 사용자 가이드](https://docs.ngsc.go.kr/ko/Network/Network%20ACL/ko/overview)를 참고하세요.
 
 ### 스냅숏
 
@@ -46,7 +46,7 @@ Network ACL 서비스를 통해 접근 제어 목록(ACL)을 설정할 수 있�
 
 #### 스냅숏 복원
 
-스토리지를 스냅숏이 생성된 시점으로 복원합니다. 스냅숏을 복원하려면 [고객 센터](https://www.nhncloud.com/kr/support/inquiry?alias=tab3_03)에 문의하세요.
+스토리지를 스냅숏이 생성된 시점으로 복원합니다. 스냅숏을 복원하려면 [고객 센터](https://www.ngsc.go.kr/kr/support/inquiry?alias=tab3_03)에 문의하세요.
 
 #### 스냅숏 삭제
 
