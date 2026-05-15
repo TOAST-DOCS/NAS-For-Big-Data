@@ -11,12 +11,12 @@
 
 | 항목 | 설명 |
 | --- | --- |
-| 이름 | 생성할 볼륨의 이름입니다. 볼륨 이름을 통해 NFS의 접근 경로를 만듭니다. 이름은 100자 이내의 영문자와 숫자, 일부 기호('-', '\_')만 입력할 수 있습니다. |
-| 설명 | 볼륨에 대한 설명입니다. |
+| 이름 | 생성할 볼륨의 이름입니다. 볼륨 이름으로 NFS의 접근 경로를 만듭니다. 이름은 100자 이내의 영문자와 숫자, 일부 기호('-', '\_')만 입력할 수 있습니다. |
+| 설명 | 볼륨의 설명입니다. |
 | VPC | 볼륨에 접근할 VPC(virtual private cloud, 가상 사설 클라우드)입니다. |
-| 서브넷 | 볼륨에 접근할 서브넷입니다. 선택된 VPC의 서브넷만 선택할 수 있습니다. |
-| 크기 | 생성할 볼륨의 크기입니다. 최소 1,000기가바이트(GB)부터 최대 50,000기가바이트(GB)까지 입력할 수 있습니다. |
-| 접근 제어 목록(ACL) | Network ACL 서비스를 통해 접근 제어 목록(ACL)을 설정할 수 있습니다. 자세한 사항은 [Network ACL 서비스 사용자 가이드](/Network/Network%20ACL/ko/overview)를 참고하세요. |
+| 서브넷 | 볼륨에 접근할 서브넷입니다. 선택한 VPC의 서브넷만 선택할 수 있습니다. |
+| 크기 | 생성할 볼륨의 크기입니다. 최소 1,000GB부터 최대 50,000GB까지 입력할 수 있습니다. |
+| 접근 제어 목록(ACL) | Network ACL 서비스에서 접근 제어 목록(ACL)을 설정할 수 있습니다. 자세한 사항은 [Network ACL 서비스 사용자 가이드](/Network/Network%20ACL/ko/overview)를 참고하세요. |
 | 스냅숏 자동 생성 | 매일 지정한 시간에 스냅숏을 자동으로 생성합니다. 설정한 개수를 초과하면 가장 오래된 스냅숏부터 순차적으로 삭제됩니다. |
 
 <a id="delete_volume"></a>
@@ -37,26 +37,26 @@
 <a id="change_acl"></a>
 ### 접근 제어 설정 변경
 
-Network ACL 서비스를 통해 접근 제어 목록(ACL)을 설정할 수 있습니다. 자세한 사항은 [Network ACL 서비스 사용자 가이드](/Network/Network%20ACL/ko/overview)를 참고하세요.
+Network ACL 서비스에서 접근 제어 목록(ACL)을 설정할 수 있습니다. 자세한 사항은 [Network ACL 서비스 사용자 가이드](/Network/Network%20ACL/ko/overview)를 참고하세요.
 
 <a id="snapshots"></a>
 ## 스냅숏
-스냅숏은 볼륨의 특정 시점 상태를 저장한 읽기 전용 복사본입니다. 스냅숏을 이용해 볼륨을 생성 시점의 상태로 복원할 수 있습니다.
+스냅숏은 볼륨의 특정 시점 상태를 저장한 읽기 전용 복사본입니다. 스냅숏을 이용해 볼륨을 스냅숏 생성 시점의 상태로 복원할 수 있습니다.
 
 | 항목 | 설명 |
 | --- | --- |
-| 이름 | 스냅숏의 이름입니다. 시스템에 의해 생성된 경우 지정된 규칙에 따라 이름이 정해집니다. |
+| 이름 | 스냅숏의 이름입니다. 시스템이 생성한 경우 지정된 규칙에 따라 이름이 정해집니다. |
 | 생성일 | 스냅숏이 생성된 시간입니다. |
 
 <a id="snapshots.create"></a>
 ### 스냅숏 즉시 생성
 
-스냅숏을 즉시 생성합니다. 이름은 32자 이내의 영문자와 숫자, 일부 기호('-', '\_', '.')만 입력할 수 있습니다. 각 스냅숏은 볼륨 내에서 고유한 이름을 가져야 합니다.
+스냅숏을 즉시 생성합니다. 이름은 32자 이내의 영문자와 숫자, 일부 기호('-', '\_', '.')만 입력할 수 있습니다. 각 스냅숏은 볼륨에서 고유한 이름을 가져야 합니다.
 
 <a id="snapshots.restore"></a>
 ### 스냅숏 복원
 
-볼륨을 스냅숏이 생성된 시점으로 복원합니다. 스냅숏을 복원하려면 [고객 센터](https://www.nhncloud.com/kr/support/inquiry)에 문의하세요.
+볼륨을 스냅숏이 생성된 시점으로 복원합니다. 스냅숏을 복원하려면 [고객지원](https://www.nhncloud.com/kr/support/inquiry)에 문의하세요.
 
 <a id="snapshots.delete"></a>
 ### 스냅숏 삭제
@@ -69,26 +69,31 @@ Network ACL 서비스를 통해 접근 제어 목록(ACL)을 설정할 수 있�
 생성된 볼륨의 연결 정보를 이용하여 인스턴스에 마운트할 수 있습니다. 단, 마운트할 인스턴스는 볼륨과 같은 서브넷에 연결되어 있어야 합니다.
 
 <a id="connect_volume.nfs"></a>
-### nfs 패키지 설치
+### NFS 패키지 설치
 
 #### Debian, Ubuntu
 
 ```
 sudo apt-get install nfs-common rpcbind
 ```
+<br/>
 
 #### Rocky
 
 ```
 sudo dnf install nfs-utils rpcbind
 ```
+<br/>
 
+<a id="connect_volume.rpcbind"></a>
 ### rpcbind 서비스 실행
 
 ```
 sudo service rpcbind start
 ```
+<br/>
 
+<a id="connect_volume.mount"></a>
 ### 볼륨 마운트
 
 ```
@@ -97,6 +102,5 @@ sudo mount -t nfs <nas source> <mount point>
 
 | 항목 | 설명 |
 | --- | --- |
-| &lt;nas source&gt; | 볼륨 정보<br/>예: 192.168.0.11:/GJ\_SHARE\_FS8/bacb62d4-f271-44ad-a5d2-505d21037b45 |
-| &lt;mount point&gt; | 볼륨을 마운트할 디렉터리<br/>예: /mnt |
-
+| &lt;nas source&gt; | 볼륨 정보<br>예: 192.168.0.11:/GJ\_SHARE\_FS8/bacb62d4-f271-44ad-a5d2-505d21037b45 |
+| &lt;mount point&gt; | 볼륨을 마운트할 디렉터리<br>예: /mnt |
