@@ -16,7 +16,7 @@ Creates a new volume. The created volume can be accessed from instances by using
 | VPC | The virtual private cloud (VPC) to access the volume. |
 | Subnet | The subnet to access the volume. Only subnets in the selected VPC can be chosen. |
 | Size | Size of the volume to be created. It can be entered from a minimum of 1,000 GB to a maximum of 50,000 GB. |
-| Access Control List (ACL) | Access control lists (ACLs) can be configured in the Network ACL service. For more information, see the [Network ACL service user guide](/Network/Network%20ACL/ko/overview). |
+| Access Control List (ACL) | Access control lists (ACLs) can be configured in the Network ACL service. For more information, see the [Network ACL service user guide](/Network/Network%20ACL/en/overview). |
 | Auto Create Snapshot | A snapshot is automatically created at the specified time every day. If you exceed the set number, it is gradually deleted from the oldest snapshot. |
 
 <a id="delete_volume"></a>
@@ -25,19 +25,19 @@ Creates a new volume. The created volume can be accessed from instances by using
 Deletes a volume.
 
 > [Caution]
-It is recommended to unmount the volume from connected instances before deleting it. Deleting a volume while it is still mounted may cause issues on the user system.
+> It is recommended to unmount the volume from connected instances before deleting it. Deleting a volume while it is still mounted may cause issues on the user system.
 >
 > If you delete a volume, all data, including snapshots, is deleted. Data cannot be recovered after deletion.
 
 <a id="change_volume_size"></a>
-### Change a Volume size
+### Change a Volume Size
 
 Changes the size of a volume. The size can be changed even while the volume is in use.
 
 <a id="change_acl"></a>
 ### Change Access Control Settings
 
-Access control lists (ACLs) can be configured in the Network ACL service. For more information, see the [Network ACL service user guide](/Network/Network%20ACL/ko/overview).
+Access control lists (ACLs) can be configured in the Network ACL service. For more information, see the [Network ACL service user guide](/Network/Network%20ACL/en/overview).
 
 <a id="snapshots"></a>
 ## Snapshot
@@ -102,5 +102,5 @@ sudo mount -t nfs <nas source> <mount point>
 
 | Item | Description |
 | --- | --- |
-| <nas source> | Volume information<br>Example: 192.168.0.11:/GJ_SHARE_FS8/bacb62d4-f271-44ad-a5d2-505d21037b45 |
-| <mount point> | Directory to mount the volume<br>Example: /mnt |
+| &lt;nas source&gt; | Volume information<br>Example: 192.168.0.11:/GJ_SHARE_FS8/bacb62d4-f271-44ad-a5d2-505d21037b45 |
+| &lt;mount point&gt; | Directory to mount the volume<br>Example: /mnt |
