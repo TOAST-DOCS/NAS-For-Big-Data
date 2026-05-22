@@ -6,3 +6,4 @@
 
 * NAS for BigDataサービスのリリース
     * 韓国(光州)リージョンにNAS for BigDataサービスがリリースされました。
+
