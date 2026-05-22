@@ -34,10 +34,10 @@ NAS is a file-based storage device accessible over a network. Users can mount NA
 <a id="glossary.volume"></a>
 ### Volume
 
-A volume is a logical storage space in NAS that can be mounted on an instance to store or read data.
+A volume is a logical storage space in NAS that can be mounted on an instance to store or access data.
 
 <a id="glossary.snapshots"></a>
 ### Snapshot
 
 A snapshot is a read-only copy of a volume created at a specific point in time. When unexpected data corruption or deletion occurs, the data can be quickly restored to that point in time.
-In NAS for BigData, the time for automatic snapshot creation can be set once per day, and created snapshots consume a portion of the storage space.
+The cycle for automatic snapshot creation can be configured, and created snapshots consume a portion of the storage space.
