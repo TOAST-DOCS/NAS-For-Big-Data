@@ -15,9 +15,9 @@
 | 설명 | 볼륨의 설명입니다. |
 | VPC | 볼륨에 접근할 VPC(virtual private cloud, 가상 사설 클라우드)입니다. |
 | 서브넷 | 볼륨에 접근할 서브넷입니다. 선택한 VPC의 서브넷만 선택할 수 있습니다. |
-| 크기 | 생성할 볼륨의 크기입니다. 최소 1테라바이트(TB)부터 최대 1페타바이트(PB)까지 입력할 수 있습니다. |
-| 접근 제어 목록(ACL) | Network ACL 서비스에서 접근 제어 목록(ACL)을 설정할 수 있습니다. 자세한 사항은 [Network ACL 서비스 사용자 가이드](/Network/Network%20ACL/ko/overview-ngsc)를 참고하세요. |
-| 스냅숏 자동 생성 | 매일 지정한 시간에 스냅숏을 자동으로 생성합니다. 설정한 개수를 초과하면 가장 오래된 스냅숏부터 순차적으로 삭제됩니다. |
+| 크기 | 생성할 볼륨의 크기입니다. 최소 1,000GB부터 최대 50,000GB까지 입력할 수 있습니다. |
+| 접근 제어 목록(ACL) | Network ACL 서비스에서 접근 제어 목록(ACL)을 설정할 수 있습니다. 자세한 사항은 [Network ACL 서비스 사용자 가이드](/Network/Network%20ACL/ko/overview)를 참고하세요. |
+| 스냅숏 자동 생성 | 설정한 주기에 따라 스냅숏을 자동으로 생성합니다. 설정한 개수를 초과하면 가장 오래된 스냅숏부터 순차적으로 삭제됩니다. |
 
 <a id="delete_volume"></a>
 ### 볼륨 삭제
@@ -37,7 +37,7 @@
 <a id="change_acl"></a>
 ### 접근 제어 설정 변경
 
-Network ACL 서비스에서 접근 제어 목록(ACL)을 설정할 수 있습니다. 자세한 사항은 [Network ACL 서비스 사용자 가이드](/Network/Network%20ACL/ko/overview-ngsc)를 참고하세요.
+Network ACL 서비스에서 접근 제어 목록(ACL)을 설정할 수 있습니다. 자세한 사항은 [Network ACL 서비스 사용자 가이드](/Network/Network%20ACL/ko/overview)를 참고하세요.
 
 <a id="snapshots"></a>
 ## 스냅숏
@@ -56,7 +56,7 @@ Network ACL 서비스에서 접근 제어 목록(ACL)을 설정할 수 있습니
 <a id="snapshots.restore"></a>
 ### 스냅숏 복원
 
-볼륨을 스냅숏이 생성된 시점으로 복원합니다. 스냅숏을 복원하려면 [고객지원](https://www.ngsc.go.kr/kr/support/inquiry)에 문의하세요.
+볼륨을 스냅숏이 생성된 시점으로 복원합니다. 스냅숏을 복원하려면 [고객지원](https://www.nhncloud.com/kr/support/inquiry)에 문의하세요.
 
 <a id="snapshots.delete"></a>
 ### 스냅숏 삭제
