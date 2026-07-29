@@ -1,7 +1,7 @@
-<!-- pre-align:aligned sig=d48e0cc2304b -->
-
 <a id="storage-nas-for-bigdata-console-user-guide"></a>
 ## Storage > NAS for BigData > 콘솔 사용 가이드 { #storage-nas-for-bigdata-console-user-guide }
+
+이 문서는 NHN Cloud 콘솔에서 NAS for BigData의 볼륨과 스냅숏을 관리하고 인스턴스에 연결하는 방법을 설명합니다.
 
 <a id="volume"></a>
 ## 볼륨 { #volume }
@@ -27,10 +27,10 @@
 
 볼륨을 삭제합니다.
 
-> [주의]
-> 연결된 인스턴스에서 마운트 해제 후 삭제할 것을 권장합니다. 마운트 상태에서 볼륨을 삭제하면 사용자 시스템에 문제가 생길 수 있습니다.
->
-> 볼륨을 삭제할 경우 스냅숏을 포함한 모든 데이터가 삭제됩니다. 삭제 후에는 데이터를 복구할 수 없습니다.
+!!! tip "주의"
+    연결된 인스턴스에서 마운트 해제 후 삭제할 것을 권장합니다. 마운트 상태에서 볼륨을 삭제하면 사용자 시스템에 문제가 생길 수 있습니다.
+
+    볼륨을 삭제할 경우 스냅숏을 포함한 모든 데이터가 삭제됩니다. 삭제 후에는 데이터를 복구할 수 없습니다.
 
 <a id="change_volume_size"></a>
 ### 볼륨 크기 변경 { #change_volume_size }
