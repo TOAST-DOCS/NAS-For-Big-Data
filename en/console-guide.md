@@ -1,7 +1,7 @@
-<!-- pre-align:aligned sig=d48e0cc2304b -->
-
 <a id="storage-nas-for-bigdata-console-user-guide"></a>
 ## Storage > NAS for BigData > Console User Guide { #storage-nas-for-bigdata-console-user-guide }
+
+This document describes how to manage NAS for BigData volumes and snapshots and connect them to instances in the NHN Cloud console.
 
 <a id="volume"></a>
 ## Volume { #volume }
@@ -27,10 +27,10 @@ Creates a new volume. The created volume can be accessed from instances by using
 
 Deletes a volume.
 
-> [Caution]
-> It is recommended to unmount the volume from connected instances before deleting it. Deleting a volume while it is still mounted may cause issues on the user system.
->
-> If you delete a volume, all data, including snapshots, is deleted. Data cannot be recovered after deletion.
+!!! danger "Caution"
+    It is recommended to unmount the volume from connected instances before deleting it. Deleting a volume while it is still mounted may cause issues on the user system.
+
+If you delete a volume, all data, including snapshots, is deleted. Data cannot be recovered after deletion.
 
 <a id="change_volume_size"></a>
 ### Change a Volume Size { #change_volume_size }
