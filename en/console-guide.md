@@ -1,3 +1,5 @@
+<!-- pre-align:aligned sig=d48e0cc2304b -->
+
 <a id="storage-nas-for-bigdata-console-user-guide"></a>
 ## Storage > NAS for BigData > Console User Guide { #storage-nas-for-bigdata-console-user-guide }
 
