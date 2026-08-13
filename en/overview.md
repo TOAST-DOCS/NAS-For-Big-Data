@@ -3,7 +3,6 @@
 <!-- pre-align:aligned sig=ad9be4a958b6 -->
 
 <a id="storage-nas-for-bigdata-overview"></a>
-
 ## Storage > NAS for BigData > Overview { #storage-nas-for-bigdata-overview }
 
 NAS for BigData is a fully managed network-attached storage (NAS) service that enables easy use of large-capacity file storage in a cloud environment. Based on the standard network file system (NFS) protocol, it can be easily mounted on cloud instances, allowing data to be read and written like a local disk.
@@ -11,7 +10,6 @@ NAS for BigData is a fully managed network-attached storage (NAS) service that e
 It provides scalable large-capacity storage and is well-suited for various tasks such as file sharing between instances, large-scale data analysis, and backups.
 
 <a id="features"></a>
-
 ## Features { #features }
 
 <a id="features.capacity"></a>
