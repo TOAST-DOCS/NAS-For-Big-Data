@@ -12,7 +12,6 @@
 ボリュームはNASの論理的な保存領域であり、インスタンスにマウントしてデータを保存または読み込むことができます。
 
 <a id="create_volume"></a>
-
 ### ボリューム作成 { #create_volume }
 
 新しいボリュームを作成します。作成されたボリュームは、NFS (network file system) プロトコルを使用してインスタンスからアクセスできます。
@@ -43,13 +42,11 @@
 ボリュームのサイズを変更します。ボリュームの使用中にもサイズを変更できます。
 
 <a id="change_acl"></a>
-
 ### アクセス制御設定の変更 { #change_acl }
 
 Network ACL サービスでアクセス制御リスト (ACL) を設定できます。詳細については、[Network ACL サービスユーザーガイド](/Network/Network%20ACL/ja/overview)を参照してください。
 
 <a id="snapshots"></a>
-
 ## スナップショット { #snapshots }
 スナップショットは、ボリュームの特定時点の状態を保存した読み取り専用のコピーです。スナップショットを使用して、ボリュームをスナップショット作成時点の状態に復元できます。
 
@@ -74,7 +71,6 @@ Network ACL サービスでアクセス制御リスト (ACL) を設定できま�
 指定したスナップショットを削除します。削除したスナップショットは復旧できません。
 
 <a id="connect_volume"></a>
-
 ## ボリュームの接続 { #connect_volume }
 
 作成したボリュームの接続情報を使用して、インスタンスにマウントできます。ただし、マウントするインスタンスはボリュームと同じサブネットに接続されている必要があります。
@@ -83,7 +79,6 @@ Network ACL サービスでアクセス制御リスト (ACL) を設定できま�
 ### NFSパッケージのインストール { #connect_volume.nfs }
 
 <a id="connect_volume.nfs-debian-ubuntu"></a>
-
 #### Debian, Ubuntu
 
 ```
@@ -93,7 +88,6 @@ sudo apt-get install nfs-common rpcbind
 <br>
 
 <a id="connect_volume.nfs-rocky"></a>
-
 #### Rocky
 
 ```
@@ -103,7 +97,6 @@ sudo dnf install nfs-utils rpcbind
 <br>
 
 <a id="connect_volume.rpcbind"></a>
-
 ### rpcbindサービスの実行 { #connect_volume.rpcbind }
 
 ```
@@ -113,7 +106,6 @@ sudo service rpcbind start
 <br>
 
 <a id="connect_volume.mount"></a>
-
 ### ボリュームのマウント { #connect_volume.mount }
 
 ```
