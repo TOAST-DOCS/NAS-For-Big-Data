@@ -21,7 +21,7 @@
 | VPC | 볼륨에 접근할 VPC(virtual private cloud, 가상 사설 클라우드)입니다. |
 | 서브넷 | 볼륨에 접근할 서브넷입니다. 선택한 VPC의 서브넷만 선택할 수 있습니다. |
 | 크기 | 생성할 볼륨의 크기입니다. 최소 1테라바이트(TB)부터 최대 1페타바이트(PB)까지 입력할 수 있습니다. |
-| 접근 제어 목록(ACL) | Network ACL 서비스에서 접근 제어 목록(ACL)을 설정할 수 있습니다. 자세한 내용은 [Network ACL 서비스 사용자 가이드](/Network/Network%20ACL/ko/overview-ngsc)를 참고하세요. |
+| 접근 제어 목록(ACL) | Network ACL 서비스에서 접근 제어 목록(ACL)을 설정할 수 있습니다. 자세한 내용은 [Network ACL 서비스 사용자 가이드](/Network/Network%20ACL/ko/overview-ngsc)를 참고합니다. |
 | 스냅숏 자동 생성 | 설정한 주기에 따라 스냅숏을 자동으로 생성합니다. 설정한 개수를 초과하면 가장 오래된 스냅숏부터 순차적으로 삭제됩니다. |
 
 <a id="delete_volume"></a>
@@ -42,7 +42,7 @@
 <a id="change_acl"></a>
 ### 접근 제어 설정 변경 { #change_acl }
 
-Network ACL 서비스에서 접근 제어 목록(ACL)을 설정할 수 있습니다. 자세한 내용은 [Network ACL 서비스 사용자 가이드](/Network/Network%20ACL/ko/overview-ngsc)를 참고하세요.
+Network ACL 서비스에서 접근 제어 목록(ACL)을 설정할 수 있습니다. 자세한 내용은 [Network ACL 서비스 사용자 가이드](/Network/Network%20ACL/ko/overview-ngsc)를 참고합니다.
 
 <a id="snapshots"></a>
 ## 스냅숏 { #snapshots }
@@ -71,7 +71,7 @@ Network ACL 서비스에서 접근 제어 목록(ACL)을 설정할 수 있습니
 <a id="connect_volume"></a>
 ## 볼륨 연결 { #connect_volume }
 
-생성된 볼륨의 연결 정보를 사용하여 인스턴스에 마운트할 수 있습니다. 단, 마운트할 인스턴스는 볼륨과 같은 서브넷에 연결되어 있어야 합니다.
+생성된 볼륨의 연결 정보를 사용하여 인스턴스에 마운트할 수 있습니다. 단, 마운트할 인스턴스는 볼륨과 같은 서브넷에 연결되어야 합니다.
 
 <a id="connect_volume.nfs"></a>
 ### NFS 패키지 설치 { #connect_volume.nfs }
