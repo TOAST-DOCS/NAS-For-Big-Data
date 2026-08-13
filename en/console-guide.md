@@ -10,7 +10,6 @@
 A volume is a logical storage space in NAS that can be mounted on an instance to store or read data.
 
 <a id="create_volume"></a>
-
 ### Create a Volume { #create_volume }
 
 Creates a new volume. The created volume can be accessed from instances by using the network file system (NFS) protocol.
@@ -41,13 +40,11 @@ Deletes a volume.
 Changes the size of a volume. The size can be changed even while the volume is in use.
 
 <a id="change_acl"></a>
-
 ### Change Access Control Settings { #change_acl }
 
 Access control lists (ACLs) can be configured in the Network ACL service. For more information, see the [Network ACL service user guide](/Network/Network%20ACL/en/overview).
 
 <a id="snapshots"></a>
-
 ## Snapshots { #snapshots }
 A snapshot is a read-only copy that saves the state of a volume at a specific point in time. Snapshots can be used to restore a volume to the state it was in at the time the snapshot was created.
 
@@ -71,7 +68,6 @@ Restores the volume to the point in time when the snapshot was created. Contact 
 Deletes the specified snapshot. Deleted snapshots cannot be recovered.
 
 <a id="connect_volume"></a>
-
 ## Connect to Volume { #connect_volume }
 
 The created volume can be mounted on an instance using the connection information. However, the instance to be mounted must be connected to the same subnet as the volume.
@@ -80,7 +76,6 @@ The created volume can be mounted on an instance using the connection informatio
 ### Install NFS Package { #connect_volume.nfs }
 
 <a id="connect_volume.nfs-debian-ubuntu"></a>
-
 #### Debian, Ubuntu
 
 ```
@@ -90,7 +85,6 @@ sudo apt-get install nfs-common rpcbind
 <br>
 
 <a id="connect_volume.nfs-rocky"></a>
-
 #### Rocky
 
 ```
@@ -100,7 +94,6 @@ sudo dnf install nfs-utils rpcbind
 <br>
 
 <a id="connect_volume.rpcbind"></a>
-
 ### Run rpcbind Service { #connect_volume.rpcbind }
 
 ```
@@ -110,7 +103,6 @@ sudo service rpcbind start
 <br>
 
 <a id="connect_volume.mount"></a>
-
 ### Volume Mount { #connect_volume.mount }
 
 ```
