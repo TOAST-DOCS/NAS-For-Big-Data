@@ -14,7 +14,6 @@ This document describes how to manage NAS for BigData volumes and snapshots and 
 A volume is a logical storage space in NAS that can be mounted on an instance to store or read data.
 
 <a id="create_volume"></a>
-
 ### Create a Volume { #create_volume }
 
 Creates a new volume. The created volume can be accessed from instances by using the network file system (NFS) protocol.
@@ -45,7 +44,6 @@ If you delete a volume, all data, including snapshots, is deleted. Data cannot b
 Changes the size of a volume. The size can be changed even while the volume is in use.
 
 <a id="change_acl"></a>
-
 ### Change Access Control Settings { #change_acl }
 
 Access control lists (ACLs) can be configured in the Network ACL service. For more information, see the [Network ACL service user guide]($[ network_acl_guide_url ]$).
@@ -65,7 +63,6 @@ A snapshot is a read-only copy that saves the state of a volume at a specific po
 Creates a snapshot immediately. The name is limited to up to 32 characters, including letters, numbers, and some symbols (-, \_, .). Each snapshot must have a unique name within the volume.
 
 <a id="snapshots.restore"></a>
-
 ### Restore a Snapshot { #snapshots.restore }
 
 Restores the volume to the point in time when the snapshot was created. Contact [customer support]($[ support_url ]$) to restore the snapshot.
