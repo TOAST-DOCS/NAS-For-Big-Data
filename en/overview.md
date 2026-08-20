@@ -1,21 +1,25 @@
 <!-- machine_translated: true -->
 
+{% include-markdown '../_nas-for-big-data-vars.md' %}
+
 <!-- pre-align:aligned sig=70f5c107edf8 -->
 
 <a id="storage-nas-for-bigdata-overview"></a>
+
 ## Storage > NAS for BigData > Overview { #storage-nas-for-bigdata-overview }
 
 NAS for BigData is a fully managed network-attached storage (NAS) service that enables easy use of large-capacity file storage in a cloud environment. Based on the standard network file system (NFS) protocol, it can be easily mounted on cloud instances, allowing data to be read and written like a local disk.
 
-It provides scalable large-capacity storage and is well-suited for various tasks such as file sharing between instances, large-scale data analysis, and backups.
+$[ overview_capacity_prefix ]$It provides scalable large-capacity storage and is well-suited for various tasks such as file sharing between instances, large-scale data analysis, and backups.
 
 <a id="features"></a>
 ## Features { #features }
 
 <a id="features.capacity"></a>
+
 ### Large-capacity storage { #features.capacity }
 
-In projects that handle large-scale data, storage capacity can be adjusted in real time from the console without the need to scale out physical hardware, reducing operational overhead. Volume size changes are applied without data loss, and the scalability and elasticity enable flexible data management.
+{% if overview_capacity_prefix %}Storage capacity can be expanded up to $[ max_size_text ]$. $[ scale_description ]$ {% endif %}In projects that handle large-scale data, storage capacity can be adjusted in real time from the console without the need to scale out physical hardware, reducing operational overhead. Volume size changes are applied without data loss, and the scalability and elasticity enable flexible data management.
 
 <a id="features.sharing"></a>
 ### Efficient file sharing based on NFS { #features.sharing }
@@ -23,9 +27,10 @@ In projects that handle large-scale data, storage capacity can be adjusted in re
 With NFS protocol support, file sharing between instances can be implemented easily and quickly. A single volume can be mounted simultaneously on multiple servers, making it suitable for parallel processing and distributed workloads in multi-node environments.
 
 <a id="features.access_control"></a>
+
 ### Easy creation and flexible access control { #features.access_control }
 
-File-level storage can be configured quickly from the web console without complex setup. In addition, IP-based access control policies can be configured in the Network ACL service, providing both security and flexibility, even in environments with multiple connected instances.
+File-level storage can be configured quickly from the console without complex setup. In addition, IP-based access control policies can be configured in the Network ACL service, providing both security and flexibility, even in environments with multiple connected instances.
 
 <a id="glossary"></a>
 ## Terminology { #glossary }
