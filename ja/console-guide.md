@@ -1,5 +1,7 @@
 <!-- machine_translated: true -->
 
+{% include-markdown '../_nas-for-big-data-vars.md' %}
+
 <!-- pre-align:aligned sig=d48e0cc2304b -->
 
 <a id="storage-nas-for-bigdata-console-user-guide"></a>
@@ -22,8 +24,8 @@
 | 説明 | ボリュームの説明です。 |
 | VPC | ボリュームにアクセスするVPC(Virtual Private Cloud：仮想プライベートクラウド)です。 |
 | サブネット | ボリュームにアクセスするサブネットです。選択したVPCのサブネットのみ選択できます。 |
-| サイズ | 作成するボリュームのサイズです。最小1,000GBから最大50,000GBまで入力できます。 |
-| アクセス制御リスト (ACL) | Network ACL サービスでアクセス制御リスト (ACL) を設定できます。詳細については、[Network ACL サービスユーザーガイド](/Network/Network%20ACL/ja/overview)を参照してください。 |
+| サイズ | 作成するボリュームのサイズです。最小 $[ min_size ]$ から最大 $[ max_size ]$ まで入力できます。 |
+| アクセス制御リスト (ACL) | Network ACL サービスでアクセス制御リスト (ACL) を設定できます。詳細については、「[Network ACL サービスユーザーガイド]($[ network_acl_guide_url ]$)」を参照してください。 |
 | スナップショット自動作成 | 設定した周期に従ってスナップショットを自動的に作成します。設定した数を超過すると、最も古いスナップショットから順次削除されます。 |
 
 <a id="delete_volume"></a>
@@ -44,7 +46,7 @@
 <a id="change_acl"></a>
 ### アクセス制御設定の変更 { #change_acl }
 
-Network ACL サービスでアクセス制御リスト (ACL) を設定できます。詳細については、[Network ACL サービスユーザーガイド](/Network/Network%20ACL/ja/overview)を参照してください。
+Network ACL サービスでアクセス制御リスト（ACL）を設定できます。詳細については、「[Network ACL サービスユーザーガイド]($[ network_acl_guide_url ]$)」を参照してください。
 
 <a id="snapshots"></a>
 ## スナップショット { #snapshots }
@@ -63,7 +65,7 @@ Network ACL サービスでアクセス制御リスト (ACL) を設定できま�
 <a id="snapshots.restore"></a>
 ### スナップショットの復元 { #snapshots.restore }
 
-ボリュームをスナップショットが作成された時点に復元します。スナップショットを復元するには、[カスタマーサポート](https://www.nhncloud.com/kr/support/inquiry)にお問い合わせください。
+ボリュームをスナップショットが作成された時点に復元します。スナップショットを復元するには、[カスタマーサポート]($[ support_url ]$)にお問い合わせください。
 
 <a id="snapshots.delete"></a>
 ### スナップショットの削除 { #snapshots.delete }

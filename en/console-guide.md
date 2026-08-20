@@ -1,5 +1,7 @@
 <!-- machine_translated: true -->
 
+{% include-markdown '../_nas-for-big-data-vars.md' %}
+
 <!-- pre-align:aligned sig=d48e0cc2304b -->
 
 <a id="storage-nas-for-bigdata-console-user-guide"></a>
@@ -22,8 +24,8 @@ Creates a new volume. The created volume can be accessed from instances by using
 | Description | Description of the volume. |
 | VPC | The virtual private cloud (VPC) to access the volume. |
 | Subnet | The subnet to access the volume. Only subnets in the selected VPC can be chosen. |
-| Size | Size of the volume to be created. It can be entered from a minimum of 1,000 GB to a maximum of 50,000 GB. |
-| Access Control List (ACL) | Access control lists (ACLs) can be configured in the Network ACL service. For more information, see the [Network ACL service user guide](/Network/Network%20ACL/en/overview). |
+| Size | Size of the volume to be created. It can be entered from a minimum of $[ min_size ]$ to a maximum of $[ max_size ]$. |
+| Access Control List (ACL) | Access control lists (ACLs) can be configured in the Network ACL service. For more information, see the [Network ACL service user guide]($[ network_acl_guide_url ]$). |
 | Auto Create Snapshot | A snapshot is automatically created according to the configured cycle. When the configured limit is exceeded, the oldest snapshots are automatically deleted first. |
 
 <a id="delete_volume"></a>
@@ -44,7 +46,7 @@ Changes the size of a volume. The size can be changed even while the volume is i
 <a id="change_acl"></a>
 ### Change Access Control Settings { #change_acl }
 
-Access control lists (ACLs) can be configured in the Network ACL service. For more information, see the [Network ACL service user guide](/Network/Network%20ACL/en/overview).
+Access control lists (ACLs) can be configured in the Network ACL service. For more information, see the [Network ACL service user guide]($[ network_acl_guide_url ]$).
 
 <a id="snapshots"></a>
 ## Snapshot { #snapshots }
@@ -63,7 +65,7 @@ Creates a snapshot immediately. The name is limited to up to 32 characters, incl
 <a id="snapshots.restore"></a>
 ### Restore a Snapshot { #snapshots.restore }
 
-Restores the volume to the point in time when the snapshot was created. Contact [customer support](https://www.nhncloud.com/kr/support/inquiry) to restore the snapshot.
+Restores the volume to the point in time when the snapshot was created. Contact [customer support]($[ support_url ]$) to restore the snapshot.
 
 <a id="snapshots.delete"></a>
 ### Delete a Snapshot { #snapshots.delete }
